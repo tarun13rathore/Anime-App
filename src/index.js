@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Sdata from './components/Sdata';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <h1 className="heading_style"> 😎 List Of Top Anime 😜</h1>
+    {Sdata.map(App)}
+  </>,
   document.getElementById('root')
 );
 
